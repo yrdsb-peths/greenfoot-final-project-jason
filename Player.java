@@ -57,7 +57,7 @@ public class Player extends Actor
                 setRotation(90);
             }
         }
-        if(this.player == 4 )
+        if(this.player == 0 )
         {
 
             if(Greenfoot.isKeyDown("d"))
@@ -85,10 +85,6 @@ public class Player extends Actor
             MyWorld myWorld = (MyWorld) getWorld();
             myWorld.blueCounter.addScore();
         }
-        if(isTouching(Food.class)&& player ==4)
-        {
-            MyWorld myWorld = (MyWorld) getWorld();
-            myWorld.blueCounter.addScore();
-        }
+       
     }
 }

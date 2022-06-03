@@ -37,7 +37,7 @@ public class Tail extends Actor
             getWorld().removeObject(this);
             blueLength++;
         }
-        if (player == 4 && countLength % greenLength ==0)
+        if (player == 4 && countLength % greenLength == 0)
         {
             getWorld().removeObject(this);
             greenLength++;

@@ -14,9 +14,7 @@ public class MyWorld extends World
      * 
      */
     Player bluePlayer = new Player(0,0,0,255);
-    Player greenPlayer = new Player (4,0,255,0);
     Counter blueCounter = new Counter();
-    Counter greenCounter = new Counter();
     int count = 0;
     public MyWorld()
     {    
@@ -26,8 +24,6 @@ public class MyWorld extends World
         getBackground().fill();
         addObject(bluePlayer,500,400);
         addObject(blueCounter, 650, 50);
-        addObject(greenPlayer,150,400); 
-        addObject(greenCounter, 50, 50);
     }
     public void act()
     {
