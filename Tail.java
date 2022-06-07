@@ -8,14 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Tail extends Actor
 {
-    int r,g,b, player;
+    int r,b, player;
     int countLength = 0;
     static int blueLength = 1;
-    static int greenLength = 1;
     public Tail(int r, int g, int b)
     {
         this.r = r;
-        this.g = g;
         this.b = b; 
         getImage().setColor(new Color(r,g,b));
         getImage().fillRect(0,0,40,40); 
@@ -27,7 +25,7 @@ public class Tail extends Actor
     public void act()
     {
         countLength++;
-        if(countLength>15 && isTouching(Player.class))
+        if(countLength>150 && isTouching(Player.class))
         {
             getWorld().addObject(new GameOver(),getWorld().getWidth()/2, getWorld().getHeight()/2);
             Greenfoot.stop();
@@ -37,11 +35,7 @@ public class Tail extends Actor
             getWorld().removeObject(this);
             blueLength++;
         }
-        if (player == 4 && countLength % greenLength == 0)
-        {
-            getWorld().removeObject(this);
-            greenLength++;
-        }
+       
         
     }
 }
