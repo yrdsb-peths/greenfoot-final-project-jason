@@ -25,10 +25,11 @@ public class Tail extends Actor
     public void act()
     {
         countLength++;
-        if(countLength>150 && isTouching(Player.class))
+        if(countLength>15 && isTouching(Player.class))
         {
-            getWorld().addObject(new GameOver(),getWorld().getWidth()/2, getWorld().getHeight()/2);
+            getWorld().addObject(new YouLose(),getWorld().getWidth()/2, getWorld().getHeight()/2);
             Greenfoot.stop();
+            
         }
         if (player == 0 && countLength % blueLength == 0 )
         {

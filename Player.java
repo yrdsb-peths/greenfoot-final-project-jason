@@ -84,6 +84,7 @@ public class Player extends Actor
         {
             MyWorld myWorld = (MyWorld) getWorld();
             myWorld.blueCounter.addScore();
+            
         }
        
     }

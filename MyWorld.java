@@ -22,8 +22,9 @@ public class MyWorld extends World
         super(700, 500, 1); 
         getBackground().setColor(Color.BLACK);
         getBackground().fill();
-        addObject(bluePlayer,500,400);
+        addObject(bluePlayer,300,400);
         addObject(blueCounter, 650, 50);
+        
     }
     public void act()
     {
@@ -34,4 +35,5 @@ public class MyWorld extends World
             count = 0;
         }
     }
+    
 }

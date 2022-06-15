@@ -13,11 +13,7 @@ public class Counter extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public int score = 0;
-    public Counter()
-    {
-        setImage(new GreenfootImage("Score: "+ score, 30, Color.BLACK, Color.WHITE));
-        youWin();   
-    }
+   
 
     public void act()
     {
@@ -29,12 +25,5 @@ public class Counter extends Actor
         score++;
     }
 
-    public void youWin()
-    {
-        if(score == 10)
-        {
-            getWorld().addObject(new YouWin(),getWorld().getWidth()/2, getWorld().getHeight()/2);
-            Greenfoot.stop();
-        }
-    }
+    
 }
