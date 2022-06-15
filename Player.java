@@ -15,6 +15,7 @@ public class Player extends Actor
     int r, g,b, player;
     int speed = 3;
     int count = 0;
+    GreenfootSound eatSound = new GreenfootSound ("Eat.mp3");
     public Player(int player, int r, int g, int b)
     {
         setRotation(270);
@@ -84,6 +85,7 @@ public class Player extends Actor
         {
             MyWorld myWorld = (MyWorld) getWorld();
             myWorld.blueCounter.addScore();
+            eatSound.play(); 
             
         }
        
