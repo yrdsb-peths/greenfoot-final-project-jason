@@ -23,11 +23,19 @@ public class TitleScreen extends World
         for (int i = 0; i<tile.length; i++)
         {
             tile[i]= new GreenfootImage("tile00" + i + ".png");
-    
-        }
+            tile[i].scale(100,100);
+        }       
+        setBackground(tile[0]);
+    }
+    int imageIndex = 0;
+    public void animateSnake()
+    {
+        setBackground(tile[imageIndex]);
+        imageIndex = (imageIndex + 1) % tile.length;
     }
     public void act()
     {
+        animateSnake();
         if(Greenfoot.isKeyDown("space"))
         // starts the game
         {
