@@ -23,6 +23,7 @@ public class TitleScreen extends World
     public void act()
     {
         if(Greenfoot.isKeyDown("space"))
+        // starts the game
         {
             MyWorld gameWorld = new MyWorld();
             Greenfoot.setWorld(gameWorld);
