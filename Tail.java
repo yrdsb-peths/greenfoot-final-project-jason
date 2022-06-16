@@ -13,6 +13,7 @@ public class Tail extends Actor
     static int blueLength = 1;
     public Tail(int r, int g, int b)
     {
+        //tail length increases
         this.r = r;
         this.b = b; 
         getImage().setColor(new Color(r,g,b));
@@ -24,9 +25,11 @@ public class Tail extends Actor
      */
     public void act()
     {
+        
         countLength++;
         if(countLength>15 && isTouching(Player.class))
         {
+            //lose if you hit yourself
             getWorld().addObject(new YouLose(),getWorld().getWidth()/2, getWorld().getHeight()/2);
             Greenfoot.stop();
             

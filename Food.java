@@ -16,6 +16,7 @@ public class Food extends Actor
     int count = 0;
     public Food(int r, int g, int b)
     {
+        //shapoe of food
         this.r = r;
         this.g = g;
         this.b = b; 
@@ -27,10 +28,12 @@ public class Food extends Actor
         count++;
         if(count > 400)
         {
+            //food disappears after a while
             getWorld().removeObject(this);
         }
         else if(isTouching(Player.class))
         {
+            //food disappears after snake eats food
             getWorld().removeObject(this); 
         } 
         

@@ -31,6 +31,7 @@ public class MyWorld extends World
         count++;
         if(count >100)
         {
+            //spawns food
             addObject(new Food(255,0,0),Greenfoot.getRandomNumber(getWidth()-1), Greenfoot.getRandomNumber(getHeight()-1));
             count = 0;
         }

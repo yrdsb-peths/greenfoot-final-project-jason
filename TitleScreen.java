@@ -22,6 +22,7 @@ public class TitleScreen extends World
         addObject(titleScreen, getWidth()/2, getHeight()/2);
         for (int i = 0; i<tile.length; i++)
         {
+            //animations on title screen
             tile[i]= new GreenfootImage("tile00" + i + ".png");
             tile[i].scale(100,100);
         }       
@@ -30,6 +31,7 @@ public class TitleScreen extends World
     int imageIndex = 0;
     public void animateSnake()
     {
+        //animates snake
         setBackground(tile[imageIndex]);
         imageIndex = (imageIndex + 1) % tile.length;
     }
@@ -39,6 +41,7 @@ public class TitleScreen extends World
         if(Greenfoot.isKeyDown("space"))
         // starts the game
         {
+            //starts game
             MyWorld gameWorld = new MyWorld();
             Greenfoot.setWorld(gameWorld);
         }

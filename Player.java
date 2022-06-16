@@ -18,6 +18,7 @@ public class Player extends Actor
     GreenfootSound eatSound = new GreenfootSound ("Eat.mp3");
     public Player(int player, int r, int g, int b)
     {
+        //sets player
         setRotation(270);
         this.r = r;
         this.g = g;
@@ -29,6 +30,7 @@ public class Player extends Actor
 
     public void act()
     {
+        //allows tail to grow
         count++;
         getWorld().addObject(new Tail(r, g, b), getX(), getY());
         move(speed);
@@ -38,6 +40,7 @@ public class Player extends Actor
     }
     public void moveAround()
     {
+        //moves around
         if(this.player == 0)
         {
 
@@ -81,6 +84,7 @@ public class Player extends Actor
     }
     public void eatFood()
     {
+        //what happens when snake eats food
         if(isTouching(Food.class)&& player ==0)
         {
             MyWorld myWorld = (MyWorld) getWorld();
