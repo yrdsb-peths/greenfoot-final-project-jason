@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Tail
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ tail\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ tail\ here.\r\n\ tail\ of\ snake\r\n\ Jason\ Sun\ (your\ name)\ \r\n\ June\ 2022\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=r\ g\ b
 comment1.target=Tail(int,\ int,\ int)
 comment2.params=

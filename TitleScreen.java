@@ -2,9 +2,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Title Screen.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Screen where you start off
+ *Jason Sun (your name) 
+ * June 2022
+ * (a version number or a date)
  */
 public class TitleScreen extends World
 {

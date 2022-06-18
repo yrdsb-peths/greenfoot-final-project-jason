@@ -2,9 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class YouLose here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * End screen
+ * Jason Sun
+ * June 2022
  */
 public class YouLose extends Actor
 {

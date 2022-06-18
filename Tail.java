@@ -2,9 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class tail here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * tail of snake
+ * Jason Sun (your name) 
+ * June 2022 (a version number or a date)
  */
 public class Tail extends Actor
 {
